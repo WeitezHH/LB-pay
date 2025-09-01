@@ -29,12 +29,6 @@ export default function ClientLayout({
   return (
     <html lang="zh-TW" className={`${inter.variable} ${notoSansTC.variable} antialiased`}>
       <body className="min-h-screen bg-background font-sans antialiased">
-        {/* <CHANGE> 添加專業的字體渲染優化 */}
-        <style jsx global>{`
-          body {
-            font-family: var(--font-noto-sans-tc), var(--font-inter), system-ui, sans-serif;
-          }
-        `}</style>
         {children}
       </body>
     </html>
