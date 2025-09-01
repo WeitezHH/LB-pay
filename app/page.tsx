@@ -8,7 +8,6 @@ import { Progress } from "@/components/ui/progress"
 import {
   Home,
   QrCode,
-  Mic,
   User,
   BarChart3,
   Sparkles,
@@ -547,34 +546,57 @@ export default function LandBankMobilePay() {
       <div className="fixed bottom-20 right-4 z-50">
         <Button
           size="lg"
-          className="h-20 w-20 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-orange-500 hover:from-amber-500 hover:via-yellow-600 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 trust-glow land-bank-pulse border-4 border-white/30 relative overflow-hidden"
+          className="h-16 w-16 rounded-full bg-gradient-to-br from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-white relative overflow-hidden"
           onClick={handleVoiceAssistant}
           id="voice-assistant"
         >
-          <div className="flex flex-col items-center relative">
-            {/* Fortune God inspired design */}
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%88%AA%E5%9C%96%202025-09-01%20%E4%B8%8A%E5%8D%8811.22.21-So4SCiOZTG9KB5srV6ykXFQao52F5p.png"
-              alt="小福德助理"
-              className="w-12 h-12 object-contain drop-shadow-sm"
-            />
-            <div className="flex items-center gap-1 mt-1">
-              <Mic className="h-3 w-3 text-white drop-shadow-sm" />
-              <span className="text-xs text-white font-bold drop-shadow-sm">小福德</span>
+          <div className="flex flex-col items-center justify-center relative">
+            <div className="relative">
+              {/* Face - round and cheerful, reduced size */}
+              <div className="w-7 h-7 bg-gradient-to-br from-orange-50 to-orange-100 rounded-full border border-orange-200 relative">
+                {/* Hair - brown bowl cut style, proportionally smaller */}
+                <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-6 h-3 bg-gradient-to-br from-amber-800 to-amber-900 rounded-t-full"></div>
+
+                {/* Eyes - simple black dots, slightly smaller */}
+                <div className="absolute top-2 left-1.5 w-1 h-1 bg-gray-900 rounded-full"></div>
+                <div className="absolute top-2 right-1.5 w-1 h-1 bg-gray-900 rounded-full"></div>
+
+                {/* Big happy smile - red mouth, proportionally smaller */}
+                <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-2 h-1.5 bg-red-500 rounded-full"></div>
+
+                {/* Cheeks - slight blush, smaller */}
+                <div className="absolute top-2.5 left-0.5 w-0.5 h-0.5 bg-red-300 rounded-full opacity-60"></div>
+                <div className="absolute top-2.5 right-0.5 w-0.5 h-0.5 bg-red-300 rounded-full opacity-60"></div>
+              </div>
+
+              {/* Hat - brown with Land Bank emblem, scaled down */}
+              <div className="absolute -top-1.5 left-1/2 transform -translate-x-1/2 w-6 h-3 bg-gradient-to-br from-amber-700 to-amber-800 rounded-t-full border border-amber-900 relative">
+                {/* Hat emblem, smaller */}
+                <div className="absolute top-0.5 left-1/2 transform -translate-x-1/2 w-1.5 h-1 bg-yellow-400 rounded-full border border-yellow-600 flex items-center justify-center">
+                  <span className="text-[4px] text-amber-800 font-bold">土</span>
+                </div>
+              </div>
+              <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-7 h-1.5 bg-gradient-to-br from-amber-700 to-amber-800 rounded-full border border-amber-900"></div>
+
+              {/* Arms raised up in celebration, smaller and closer */}
+              <div className="absolute top-1.5 -left-1.5 w-1.5 h-2 bg-gradient-to-br from-orange-50 to-orange-100 rounded-full transform rotate-45"></div>
+              <div className="absolute top-1.5 -right-1.5 w-1.5 h-2 bg-gradient-to-br from-orange-50 to-orange-100 rounded-full transform -rotate-45"></div>
             </div>
-            {/* Notification indicator */}
-            <div className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse border-2 border-white"></div>
-            {/* Golden sparkle effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-300/20 to-transparent rounded-full animate-pulse"></div>
+
+            {/* Name label, slightly larger for readability */}
+            <span className="text-[10px] text-white font-bold mt-0.5 drop-shadow-sm">小福德</span>
           </div>
+
+          {/* Notification dot */}
+          <div className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse border-2 border-white"></div>
         </Button>
-        <div className="absolute -top-14 -left-12 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-lg px-4 py-2 shadow-lg border-2 border-amber-200 animate-bounce">
-          <div className="text-xs text-amber-800 font-medium whitespace-nowrap flex items-center gap-1">
+
+        <div className="absolute -top-12 -right-2 bg-white rounded-lg px-3 py-2 shadow-lg border border-gray-200 animate-bounce">
+          <div className="text-xs text-gray-700 font-medium whitespace-nowrap flex items-center gap-1">
             <span>👋</span>
             <span>小福德為您服務！</span>
-            <span>🎯</span>
           </div>
-          <div className="absolute bottom-0 left-8 transform translate-y-1/2 rotate-45 w-2 h-2 bg-gradient-to-br from-amber-50 to-yellow-50 border-r border-b border-amber-200"></div>
+          <div className="absolute bottom-0 right-6 transform translate-y-1/2 rotate-45 w-2 h-2 bg-white border-r border-b border-gray-200"></div>
         </div>
       </div>
 
