@@ -637,7 +637,7 @@ export default function LandBankMobilePay() {
             id="garden-tab"
           >
             <Leaf className="h-5 w-5" />
-            <span className="text-xs">小土苗</span>
+            <span className="text-xs">小屋系統</span>
           </Button>
 
           <Button
