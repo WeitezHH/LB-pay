@@ -552,43 +552,58 @@ export default function LandBankMobilePay() {
         >
           <div className="flex flex-col items-center justify-center relative">
             <div className="relative">
-              {/* Face - round and cheerful, reduced size */}
-              <div className="w-7 h-7 bg-gradient-to-br from-orange-50 to-orange-100 rounded-full border border-orange-200 relative">
-                {/* Hair - brown bowl cut style, proportionally smaller */}
-                <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-6 h-3 bg-gradient-to-br from-amber-800 to-amber-900 rounded-t-full"></div>
+              {/* Face - round and cheerful with more realistic proportions */}
+              <div className="w-8 h-8 bg-gradient-to-br from-orange-50 via-orange-100 to-orange-200 rounded-full border-2 border-orange-300 relative shadow-inner">
+                {/* Hair - brown bowl cut with more detail and shading */}
+                <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-7 h-4 bg-gradient-to-br from-amber-700 via-amber-800 to-amber-900 rounded-t-full shadow-sm"></div>
 
-                {/* Eyes - simple black dots, slightly smaller */}
-                <div className="absolute top-2 left-1.5 w-1 h-1 bg-gray-900 rounded-full"></div>
-                <div className="absolute top-2 right-1.5 w-1 h-1 bg-gray-900 rounded-full"></div>
-
-                {/* Big happy smile - red mouth, proportionally smaller */}
-                <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-2 h-1.5 bg-red-500 rounded-full"></div>
-
-                {/* Cheeks - slight blush, smaller */}
-                <div className="absolute top-2.5 left-0.5 w-0.5 h-0.5 bg-red-300 rounded-full opacity-60"></div>
-                <div className="absolute top-2.5 right-0.5 w-0.5 h-0.5 bg-red-300 rounded-full opacity-60"></div>
-              </div>
-
-              {/* Hat - brown with Land Bank emblem, scaled down */}
-              <div className="absolute -top-1.5 left-1/2 transform -translate-x-1/2 w-6 h-3 bg-gradient-to-br from-amber-700 to-amber-800 rounded-t-full border border-amber-900 relative">
-                {/* Hat emblem, smaller */}
-                <div className="absolute top-0.5 left-1/2 transform -translate-x-1/2 w-1.5 h-1 bg-yellow-400 rounded-full border border-yellow-600 flex items-center justify-center">
-                  <span className="text-[4px] text-amber-800 font-bold">土</span>
+                {/* Hat - more detailed with proper Land Bank styling */}
+                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-7 h-3.5 bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700 rounded-t-full border border-orange-800 relative shadow-md">
+                  {/* Hat band */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 border-t border-yellow-600"></div>
+                  {/* Land Bank emblem - green circle with characters */}
+                  <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gradient-to-br from-green-400 to-green-600 rounded-full border border-green-700 flex items-center justify-center shadow-sm">
+                    <span className="text-[5px] text-white font-bold">土</span>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute -top-0.5 left-1/2 transform -translate-x-1/2 w-7 h-1.5 bg-gradient-to-br from-amber-700 to-amber-800 rounded-full border border-amber-900"></div>
 
-              {/* Arms raised up in celebration, smaller and closer */}
-              <div className="absolute top-1.5 -left-1.5 w-1.5 h-2 bg-gradient-to-br from-orange-50 to-orange-100 rounded-full transform rotate-45"></div>
-              <div className="absolute top-1.5 -right-1.5 w-1.5 h-2 bg-gradient-to-br from-orange-50 to-orange-100 rounded-full transform -rotate-45"></div>
+                {/* Eyes - more expressive oval eyes */}
+                <div className="absolute top-2.5 left-1.5 w-1.5 h-1 bg-gray-900 rounded-full"></div>
+                <div className="absolute top-2.5 right-1.5 w-1.5 h-1 bg-gray-900 rounded-full"></div>
+
+                {/* Eyebrows - small brown arcs for expression */}
+                <div className="absolute top-2 left-1.5 w-1.5 h-0.5 bg-amber-800 rounded-full transform -rotate-12"></div>
+                <div className="absolute top-2 right-1.5 w-1.5 h-0.5 bg-amber-800 rounded-full transform rotate-12"></div>
+
+                {/* Big happy open mouth - more detailed */}
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-2.5 h-2 bg-gradient-to-b from-red-400 to-red-600 rounded-full border border-red-700 shadow-inner"></div>
+
+                {/* Tongue - small pink detail */}
+                <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-1 h-0.5 bg-pink-400 rounded-full"></div>
+
+                {/* Rosy cheeks - more prominent and realistic */}
+                <div className="absolute top-3 left-0.5 w-1 h-1 bg-gradient-to-br from-red-300 to-red-400 rounded-full opacity-80 shadow-sm"></div>
+                <div className="absolute top-3 right-0.5 w-1 h-1 bg-gradient-to-br from-red-300 to-red-400 rounded-full opacity-80 shadow-sm"></div>
+              </div>
+
+              {/* Arms raised up - more detailed with proper shading */}
+              <div className="absolute top-2 -left-2 w-2 h-2.5 bg-gradient-to-br from-orange-50 via-orange-100 to-orange-200 rounded-full transform rotate-45 shadow-sm border border-orange-300"></div>
+              <div className="absolute top-2 -right-2 w-2 h-2.5 bg-gradient-to-br from-orange-50 via-orange-100 to-orange-200 rounded-full transform -rotate-45 shadow-sm border border-orange-300"></div>
+
+              {/* Hands - small circular details */}
+              <div className="absolute top-1 -left-2.5 w-1.5 h-1.5 bg-gradient-to-br from-orange-50 to-orange-200 rounded-full shadow-sm border border-orange-300"></div>
+              <div className="absolute top-1 -right-2.5 w-1.5 h-1.5 bg-gradient-to-br from-orange-50 to-orange-200 rounded-full shadow-sm border border-orange-300"></div>
             </div>
 
-            {/* Name label, slightly larger for readability */}
-            <span className="text-[10px] text-white font-bold mt-0.5 drop-shadow-sm">小福德</span>
+            {/* Name label with better styling */}
+            <span className="text-[10px] text-white font-bold mt-1 drop-shadow-md">小福德</span>
           </div>
 
-          {/* Notification dot */}
-          <div className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse border-2 border-white"></div>
+          {/* Enhanced notification dot with pulsing effect */}
+          <div className="absolute -top-1 -right-1 h-3 w-3 bg-gradient-to-br from-red-400 to-red-600 rounded-full animate-pulse border-2 border-white shadow-lg"></div>
+
+          {/* Subtle glow effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-300/20 to-transparent rounded-full animate-pulse"></div>
         </Button>
 
         <div className="absolute -top-12 -right-2 bg-white rounded-lg px-3 py-2 shadow-lg border border-gray-200 animate-bounce">
